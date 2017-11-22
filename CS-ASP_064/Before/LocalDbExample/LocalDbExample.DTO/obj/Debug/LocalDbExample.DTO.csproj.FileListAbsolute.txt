@@ -1,0 +1,4 @@
+C:\Users\Student\Desktop\challenges\CS-ASP_064\Before\LocalDbExample\LocalDbExample.DTO\bin\Debug\LocalDbExample.DTO.dll
+C:\Users\Student\Desktop\challenges\CS-ASP_064\Before\LocalDbExample\LocalDbExample.DTO\bin\Debug\LocalDbExample.DTO.pdb
+C:\Users\Student\Desktop\challenges\CS-ASP_064\Before\LocalDbExample\LocalDbExample.DTO\obj\Debug\LocalDbExample.DTO.dll
+C:\Users\Student\Desktop\challenges\CS-ASP_064\Before\LocalDbExample\LocalDbExample.DTO\obj\Debug\LocalDbExample.DTO.pdb
