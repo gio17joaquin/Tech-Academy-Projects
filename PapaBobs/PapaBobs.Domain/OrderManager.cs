@@ -3,30 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PapaBobs.DTO;
 
 namespace PapaBobs.Domain
 {
     public class OrderManager
     {
-        private static OrderDTO orderDTO;
-
-        public static void CreateOrder()
+        public static void CreateOrder(DTO.OrderDTO orderDTO)
         {
-            
-            var order = new DTO.OrderDTO();
-            order.OrderId = Guid.NewGuid();
-            order.Size = DTO.Enums.SizeType.Large;
-            order.Crust = DTO.Enums.CrustType.Thick;
-            order.Pepperoni = true;
-            order.Name = "Test";
-            order.Address = "123 Elm";
-            order.Zip = "12345";
-            order.Phone = "555-5555";
-            order.PaymentType = DTO.Enums.PaymentType.Credit;
-            order.TotalCost = 16.50M;
+            //Validation
+            if (orderDTO.Name.Trim().Length == 0)
+                throw new Exception("Name is required.");
+            if (orderDTO.Address.Trim().Length == 0)
+                throw new Exception("Address is required.");
+            if (orderDTO.Zip.Trim().Length == 0)
+                throw new Exception("Zip is required.");
+            if (orderDTO.Phone.Trim().Length == 0)
+                throw new Exception("Phone is required.");
 
-            Persistence.OrderRepository.CreateOrder(order);
+            orderDTO.OrderId = Guid.NewGuid();
+            orderDTO.TotalCost = PizzaPriceManager.CalculateCost(orderDTO);
+            Persistence.OrderRepository.CreateOrder(orderDTO);
+        }
+
+         public static object GetOrder()
+        {
+            return Persistence.OrderRepository.GetOrders();
+        }
+
+        public static void CompleteOrder(Guid orderID)
+        {
+            Persistence.OrderRepository.CompleteOrder(orderID);
         }
     }
 }

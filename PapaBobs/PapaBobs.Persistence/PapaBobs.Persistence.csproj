@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2BBA16FB-94B4-4C29-9F7F-5BE0812EE08C}</ProjectGuid>
+    <ProjectGuid>{15A71B69-A2B7-4D53-B8DE-D6110B2AF4AC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PapaBobs.Persistence</RootNamespace>
@@ -70,11 +70,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PapaBobsEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PizzaPrice.cs">
+      <DependentUpon>PapaBobsEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PizzaPriceRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PapaBobs.DTO\PapaBobs.DTO.csproj">
-      <Project>{50a77e08-7b73-43fa-9660-0ffd2d0b8b03}</Project>
+      <Project>{a8d9782e-b15a-4de9-a9d5-2b79050ae2af}</Project>
       <Name>PapaBobs.DTO</Name>
     </ProjectReference>
   </ItemGroup>

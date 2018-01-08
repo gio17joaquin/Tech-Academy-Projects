@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{50A77E08-7B73-43FA-9660-0FFD2D0B8B03}</ProjectGuid>
+    <ProjectGuid>{A8D9782E-B15A-4DE9-A9D5-2B79050AE2AF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PapaBobs.DTO</RootNamespace>
@@ -44,6 +44,7 @@
     <Compile Include="Enums\CrustType.cs" />
     <Compile Include="Enums\PaymentType.cs" />
     <Compile Include="Enums\SizeType.cs" />
+    <Compile Include="PizzaPriceDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB08BF07-469D-4230-89B8-F42CE541C2AB}</ProjectGuid>
+    <ProjectGuid>{FF02F1A7-9D67-4B0C-9D50-1070110C48F3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PapaBobs.Domain</RootNamespace>
@@ -41,15 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OrderManager.cs" />
+    <Compile Include="PizzaPriceManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PapaBobs.DTO\PapaBobs.DTO.csproj">
-      <Project>{50a77e08-7b73-43fa-9660-0ffd2d0b8b03}</Project>
+      <Project>{a8d9782e-b15a-4de9-a9d5-2b79050ae2af}</Project>
       <Name>PapaBobs.DTO</Name>
     </ProjectReference>
     <ProjectReference Include="..\PapaBobs.Persistence\PapaBobs.Persistence.csproj">
-      <Project>{2bba16fb-94b4-4c29-9f7f-5be0812ee08c}</Project>
+      <Project>{15a71b69-a2b7-4d53-b8de-d6110b2af4ac}</Project>
       <Name>PapaBobs.Persistence</Name>
     </ProjectReference>
   </ItemGroup>

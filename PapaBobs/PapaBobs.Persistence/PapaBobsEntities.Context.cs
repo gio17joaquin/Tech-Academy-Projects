@@ -13,10 +13,10 @@ namespace PapaBobs.Persistence
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PapaBobsDBEntities : DbContext
+    public partial class PapaBobsDbEntities : DbContext
     {
-        public PapaBobsDBEntities()
-            : base("name=PapaBobsDBEntities")
+        public PapaBobsDbEntities()
+            : base("name=PapaBobsDbEntities")
         {
         }
     
@@ -26,5 +26,6 @@ namespace PapaBobs.Persistence
         }
     
         public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<PizzaPrice> PizzaPrices { get; set; }
     }
 }

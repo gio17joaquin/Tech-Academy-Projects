@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'c:\users\student\documents\visual studio 2015\Projects\PapaBobs\PapaBobs.Persistence\PapaBobsEntities.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Student\Documents\GitHub\Tech-Academy-Projects\PapaBobs\PapaBobs.Persistence\PapaBobsEntities.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

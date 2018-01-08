@@ -8,7 +8,7 @@ namespace PapaBobs.DTO.Enums
 {
     public enum PaymentType
     {
-        Cash,
+        Cash, 
         Credit
     }
 }

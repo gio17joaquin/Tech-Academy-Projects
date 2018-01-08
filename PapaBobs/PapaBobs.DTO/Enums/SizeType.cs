@@ -9,7 +9,7 @@ namespace PapaBobs.DTO.Enums
     public enum SizeType
     {
         Small,
-        Meduim,
+        Medium,
         Large
     }
 }

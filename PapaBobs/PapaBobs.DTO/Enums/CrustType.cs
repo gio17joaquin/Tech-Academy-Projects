@@ -8,8 +8,8 @@ namespace PapaBobs.DTO.Enums
 {
     public enum CrustType
     {
-       Regular,
-       Thin,
-       Thick 
+        Regular,
+        Thin,
+        Thick
     }
 }
